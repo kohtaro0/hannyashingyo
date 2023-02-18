@@ -41,28 +41,6 @@ for i in range(len(choices)):
 # ユーザーの回答を受け取る
 while True:
     user_answer = int(input("回答を選択してください（1-4）: "))
-    import tkinter
-    # Tkクラス生成
-    root = tkinter.Tk()
-    # 画面サイズ
-    root.geometry('300x200')
-    # 画面タイトル
-    root.title('テキストボックス')
-
-    # ラベル
-    lbl = tkinter.Label(text='数値')
-    lbl.place(x=30, y=70)
-
-    # テキストボックス
-    txt = tkinter.Entry(width=20)
-    txt.place(x=90, y=70)
-
-    # 表示
-    root.mainloop()
-    if 1 <= user_answer <= 4:
-        break
-    else:
-        print("1から4の数字を入力してください。")
 
 # 回答が正しいかどうかをチェックして結果を表示
 if choices[user_answer-1] == answer:
