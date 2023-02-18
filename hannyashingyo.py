@@ -16,7 +16,7 @@ quiz_answer = "●■観自在菩薩"
 # クイズのページを表示する
 @app.route("/")
 def quiz():
-    return render_template("hannyashingyo.html", question=quiz_question, choices=quiz_choices)
+    return render_template("index.html", question=quiz_question, choices=quiz_choices)
 
 # 回答を受け取り、正解かどうかを判定する
 @app.route("/answer", methods=["POST"])
