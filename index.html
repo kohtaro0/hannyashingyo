@@ -143,4 +143,25 @@
   			<input type="button" value="次の問題へ" onclick="next_question()" >
 			</form>
 		</section>
-		<p>画像をクリックでサイズウィンドウ横幅に合わせます</p>
+		
+		<section class="section-sub">
+			<h4>問題</h4>
+			<P id='id_question'>起動中</P>
+			<img src="" alt="" id="id_mondaigazo" width="100" onclick="mondairesize();" />
+			<form name="form1">
+				<input type="checkbox" name="questions" value="A"><label id='id_ChoiceA'>A:選択肢A</label><br>
+  			<input type="checkbox" name="questions" value="B"><label id='id_ChoiceB'>B:選択肢B</label><br>
+  			<input type="checkbox" name="questions" value="C"><label id='id_ChoiceC'>C:選択肢C</label><br>
+  			<input type="checkbox" name="questions" value="D"><label id='id_ChoiceD'>D:選択肢D</label><br>
+  			<input type="button" value="解答" onclick="myCheck();">
+			</form>
+		</section>
+		<section class="section-sub">
+			<h4>解答</h4>
+			<p id='id_pf'>-</p>
+			<p id='id_kotae'>-</p>
+			<img src="" alt="" id="id_kaitougazo" width="100" onclick="kaitouresize()" />
+			<form name="form2">
+  			<input type="button" value="次の問題へ" onclick="next_question()" >
+			</form>
+		</section>
